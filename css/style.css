@@ -231,23 +231,23 @@ body {
   background-image: url("../images/surf.png");
 }
 
-.conditions__inner {
+.advantages__inner {
   display: flex;
   justify-content: space-between;
 }
 
-.conditions__info {
+.advantages__info {
   max-width: 350px;
   margin-right: 254px;
   flex: none;
 }
 
-.conditions__info-item {
+.advantages__info-item {
   display:flex;
   align-items: center;
 }
 
-.conditions__info-item span{
+.advantages__info-item span{
   padding-right: 10px;
   right: 0;
   top: 0;
@@ -259,15 +259,37 @@ body {
   color: #242121;
 }
 
-.conditions__info p {
+.advantages__info p {
   margin-bottom: 10px;
 }
 
-.conditions__text {
+.advantages__text {
   width: 600px;
   margin-bottom: 200px;
 }
 
-.conditions__text p {
+.advantages__text p {
+  margin-bottom: 30px;
+}
+
+.conquer {
+  background-image: url("../images/conquer.jpg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right 70%;
+}
+
+.conquer__inner {
+  max-width: 520px;
+  margin-right: auto;
+  margin-bottom: 200px;
+}
+
+.conquer__text {
+  padding-top: 100px;
+  text-align: left;
+}
+
+.conquer__text p {
   margin-bottom: 30px;
 }
