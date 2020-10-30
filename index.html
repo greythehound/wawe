@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>wawe</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -68,7 +69,7 @@
               Школа серфинга на канарских Островах
             </h4>
             <a href="#" class="header__content-link">
-              <img src="images/dot.png" alt="dot">
+              <img src="images/dot.svg" alt="dot">
             </a>
           </div>
         </div>
@@ -237,7 +238,104 @@
       </div>
     </section>
 
+
+    <section class="gallery">
+      <div class="container">
+        <h2 class="title">Галерея</h2>
+        <div class="gallery_filter">
+          <button class="gallery__btn" data-filter="all">Все</button>
+          <button class="gallery__btn" data-filter=".category-a">Туристы</button>
+          <button class="gallery__btn" data-filter=".category-b">Природа</button>
+          <button class="gallery__btn" data-filter=".category-c">Профи</button>
+        </div>
+
+        <div class="gallery_content">
+          <div class="gallery__item mix category-a">
+            <img src="images/gallery/surf-wave.jpg" alt="gallery image">
+            <a href="#" class="gallery__item-link"></a>
+          </div>
+          <div class="gallery__item mix category-b">
+            <img src="images/gallery/baby.jpg" alt="gallery image">
+            <a href="#" class="gallery__item-link"></a>
+          </div>
+          <div class="gallery__item mix category-c">
+            <img src="images/gallery/guy.jpg" alt="gallery image">
+            <a href="#" class="gallery__item-link"></a>
+          </div>
+          <div class="gallery__item mix category-a">
+            <img src="images/gallery/two-girls.jpg" alt="gallery image">
+            <a href="#" class="gallery__item-link"></a>
+          </div>
+          <div class="gallery__item mix category-b">
+            <img src="images/gallery/wave.jpg" alt="gallery image">
+            <a href="#" class="gallery__item-link"></a>
+          </div>
+          <div class="gallery__item mix category-c">
+            <img src="images/gallery/surfer.jpg" alt="gallery image">
+            <a href="#" class="gallery__item-link"></a>
+          </div>
+        </div>
+
+        <div class="showmore">
+          <a href="#" class="showmore_link">
+            Показать еще
+          </a>
+        </div>
+
+      </div>
+      
+      <blockquote class="blockquote">
+        <div class="blockquote__container">
+          «Если сомневаешься – иди катайся.»
+          <div class="blockquote__author">
+            Нэт Янг, первый Чемпион Мира по сёрфингу
+          </div>
+        </div>
+      </blockquote>
+
+
+      <div class="container">
+        <div class="video">
+          <a class="video__link" data-fancybox  href="https://www.youtube.com/watch?v=EyCdX6uT69o"></a>
+          <img src="images/video-image.jpg" alt="video player image">
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="result">
+          <div class="result__numbers">
+            450
+            <span>
+              туристов
+            </span>
+          </div>
+          <div class="result__numbers">
+            2500
+            <span>
+              часов катания
+            </span>
+          </div>
+          <div class="result__numbers">
+            10
+            <span>
+              проф. тренеров
+            </span>
+          </div>
+          <div class="result__numbers">
+            365
+            <span>
+              дней в году
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </section>
   </div>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
