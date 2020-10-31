@@ -155,7 +155,7 @@ body {
   position: absolute;
   content: '/';
   color: #00B2A0;
-  font-size: 52px;
+  font-size: 63px;
   line-height: 86px;
 }
 
@@ -561,7 +561,10 @@ ul.pricing__item {
 
 .pricing__items .pricing__item li {
   margin-bottom: 20px;
+}
 
+.pricing__items .pricing__item li:last-child {
+  margin-bottom: 45px;
 }
 
 .pricing__item li.pricing__item-plan {
@@ -581,10 +584,129 @@ ul.pricing__item {
   position: absolute;
   bottom: 0;
   margin-left: 100px;
+  margin-bottom: 45px;
 }
 
 .pricing__item-price sup {
   font-size: 20px;
   position: absolute;
   margin-left: 5px;
+}
+
+.map {
+  padding: 200px 224px;
+}
+
+.contacts_title {
+  margin-bottom: 243px;
+  padding: 0;
+}
+
+.contacts__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+.form {
+  width: 569px;
+}
+
+.form input{
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 18px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #DADADA;
+  margin-bottom: 50px;
+  padding-bottom: 18px;
+}
+
+.form textarea {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 18px;
+  width: 100%;
+  min-height: 156px;
+  border: none;
+  border-bottom: 2px solid #DADADA;
+  resize: none;
+  margin-bottom: 73px;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  color: #00B2A0;
+  width: 100px;
+}
+
+.form textarea::placeholder {
+  width: 260px;
+}
+
+.form button {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 18px;
+  color: #242121;
+  text-decoration: none;
+  background: #FFFFFF;
+  border: 2px solid #C4C4C4;
+  padding: 24px 111px;
+  transition: all .2s;
+  text-transform: uppercase;
+}
+
+.form button:hover {
+  background: #C4C4C4;
+}
+
+.questions {
+  background-color: #F8F8F8;
+  padding: 49px 230px 7px 52px;
+}
+
+.questions div{
+  margin-bottom: 65px;
+}
+
+.questions p {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+  color: #242121;
+  margin-bottom: 5px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+
+.social a {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 18px;
+  color: #242121;
+  margin-right: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.social a:hover {
+    color: #00B2A0;
+}
+
+.footer {
+  background-color: #00B2A0;
+  padding: 69px 69px;
+  display: flex;
+  justify-content: center;
 }
