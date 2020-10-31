@@ -280,11 +280,11 @@ body {
 .conquer__inner {
   max-width: 520px;
   margin-right: auto;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
 }
 
 .conquer__text {
-  padding-top: 100px;
+  padding-bottom: 150px;
   text-align: left;
 }
 
