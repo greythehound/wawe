@@ -325,7 +325,6 @@ body {
 
 .gallery_content {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
@@ -537,5 +536,55 @@ body {
   font-weight: bold;
   line-height: 18px;
   padding-top: 25px;
+}
 
+.pricing {
+  background: #F8F8F8;
+  padding-bottom: 200px;
+}
+
+.pricing__title {
+  padding-bottom: 183px;
+}
+
+.pricing__items {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+ul.pricing__item {
+  background-color: #ffffff;
+  padding: 45px 43px 120px;
+
+}
+
+.pricing__items .pricing__item li {
+  margin-bottom: 20px;
+
+}
+
+.pricing__item li.pricing__item-plan {
+  text-align: center;
+  font-size: 36px;
+  line-height: 40px; 
+  color: #01353E;
+  margin-bottom: 58px;
+}
+
+
+.pricing__item-price {
+  font-size: 36px;
+  line-height: 40px;
+  color: #01353E;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  margin-left: 100px;
+}
+
+.pricing__item-price sup {
+  font-size: 20px;
+  position: absolute;
+  margin-left: 5px;
 }
