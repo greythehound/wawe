@@ -70,11 +70,10 @@
           <h1 class="header__title">
             wawe
           </h1>
-          <h4 class="header__subtitle">
+          <div class="header__subtitle">
             Школа серфинга на канарских Островах
-          </h4>
+          </div>
           <a href="#" class="header__content-link">
-            <img src="images/dot.svg" alt="dot">
           </a>
         </div>
       </div>
@@ -153,11 +152,11 @@
         </h2>
 
         <div class="conditions__items">
-          <div class="conditions__item conditions__item-sun">
-            <h4 class="conditions__title title__sun">
+          <div class="conditions__item conditions__item--sun">
+            <div class="conditions__title conditions__title--sun">
               Проживание
-            </h4>
-            <div class="conditions__text text__sun">
+            </div>
+            <div class="conditions__text conditions__text--sun">
               <p>
                 Наша школа серфинга находится в 100 м от океанского побережья. К услугам гостей открытый бассейн и
                 бесплатный Wi-Fi. Из
@@ -165,10 +164,10 @@
               </p>
             </div>
           </div>
-          <div class="conditions__item conditions__item-plane">
-            <h4 class="conditions__title">
+          <div class="conditions__item conditions__item--plane">
+            <div class="conditions__title">
               Перелет и <br>страховку
-            </h4>
+            </div>
             <div class="conditions__text">
               <p>
                 Все участники программы застрахованы страховой компанией Allianz.
@@ -178,10 +177,10 @@
               </p>
             </div>
           </div>
-          <div class="conditions__item conditions__item-surf">
-            <h4 class="conditions__title">
+          <div class="conditions__item conditions__item--surf">
+            <div class="conditions__title">
               Обучение и экипировку
-            </h4>
+            </div>
             <div class="conditions__text">
               <p>
                 Все оборудование и экипировка известных производителей и предоставляется на весь курс программы.
@@ -193,26 +192,17 @@
         </div>
 
         <div class="advantages">
-          <div class="advantages__waves">
-            <div class="advantages__wave-item">
-              <img style="width: calc(100% - 40%);" src="images/wave.svg" alt="wave">
+          <div class="advantages__items">
+            <div class="advantages__item--wave-small">
               <span>85%</span>
-            </div>
-            <div class="advantages__wave-text">
               Приехали второй раз
             </div>
-            <div class="advantages__wave-item">
-              <img style="width: calc(100% - 25%);" src="images/wave.svg" alt="wave">
+            <div class="advantages__item--wave-middle">
               <span>95%</span>
-            </div>
-            <div class="advantages__wave-text">
               Научились кататься
             </div>
-            <div class="advantages__wave-item">
-              <img style="width: calc(100% - 15%);" src="images/wave.svg" alt="wave">
+            <div class="advantages__item--wave-large">
               <span>99%</span>
-            </div>
-            <div class="advantages__wave-text">
               Довольных клиентов
             </div>
           </div>
@@ -271,14 +261,14 @@
     <section class="gallery">
       <div class="container">
         <h2 class="title">Галерея</h2>
-        <div class="gallery_filter">
+        <div class="gallery__filter">
           <button class="gallery__btn" data-filter="all">Все</button>
           <button class="gallery__btn" data-filter=".category-a">Туристы</button>
           <button class="gallery__btn" data-filter=".category-b">Природа</button>
           <button class="gallery__btn" data-filter=".category-c">Профи</button>
         </div>
 
-        <div class="gallery_content">
+        <div class="gallery__content">
           <div class="gallery__item mix category-a">
             <img src="images/gallery/surf-wave.jpg" alt="gallery image">
             <a data-fancybox="gallery" href="images/gallery/surf-wave.jpg" class="gallery__item-link">
@@ -307,7 +297,7 @@
         </div>
 
         <div class="showmore">
-          <a href="#" class="showmore_link">
+          <a href="#" class="showmore__link">
             Показать еще
           </a>
         </div>
@@ -317,9 +307,9 @@
       <blockquote class="blockquote">
         <div class="blockquote__container">
           «Если сомневаешься – иди катайся.»
-          <div class="blockquote__author">
+          <cite class="blockquote__author">
             Нэт Янг, первый Чемпион Мира по сёрфингу
-          </div>
+          </cite>
         </div>
       </blockquote>
 
@@ -609,7 +599,7 @@
 
     <section class="contacts" id="contacts">
       <div class="container">
-        <h2 class="title contacts_title">
+        <h2 class="title contacts__title">
           Оставить заявку
         </h2>
         <div class="contacts__content">

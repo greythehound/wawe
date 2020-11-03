@@ -96,7 +96,8 @@ body {
   line-height: 28px;
   color: #FFFFFF;
   text-decoration: none;
-  transition: all .3s;
+  border-bottom: 1px solid transparent;
+  transition: border-color .3s;
 }
 
 .menu__link:hover {
@@ -135,7 +136,18 @@ body {
 }
 
 .header__content-link {
-  margin-bottom: 80px;
+  padding-bottom: 100px;
+
+}
+
+.header__content-link::before {
+  content: "";
+  background-image: url("../images/dot.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: absolute;
+  height: 70px;
+  width: 20px;
 }
 
 .title {
@@ -187,7 +199,6 @@ body {
 .conditions__items {
   display: flex;
   align-items: center;
-
 }
 
 .conditions__item + .conditions__item {
@@ -208,17 +219,25 @@ body {
   left: 40px;
 }
 
-.conditions__item-sun::before {
+.conditions__title--sun {
+  padding-top: 10px;
+}
+
+.conditions__text--sun {
+  padding-top: 20px;
+}
+
+.conditions__item--sun::before {
   background-image: url("../images/sun.svg");
   background-repeat: no-repeat;
 }
 
-.conditions__item-plane::before {
+.conditions__item--plane::before {
   background-image: url("../images/plane.svg");
   background-repeat: no-repeat;
 }
 
-.conditions__item-surf::before {
+.conditions__item--surf::before {
   background-image: url("../images/surf.svg");
   background-repeat: no-repeat;
 }
@@ -229,41 +248,57 @@ body {
   padding: 100px 0 200px;
 }
 
-.advantages__waves {
+.advantages__items {
   max-width: 300px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.advantages__wave-item {
-  display: flex;
+.advantages__item--wave-small span {
+  padding-left: 210px;
 }
 
-.title__sun {
-  padding-top: 10px;
+.advantages__item--wave-middle span {
+  padding-left: 260px;
 }
 
-.text__sun {
-  padding-top: 20px;
+.advantages__item--wave-large span {
+  padding-left: 305px;
 }
 
-.advantages__wave-item img{
-  margin-right: 25px;
+.advantages__item--wave-small::before {
+  content: "";
+  background-image: url("../images/wave-small.svg");
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 200px;
+  position: absolute;
 }
 
-.advantages__wave-item span {
-  font-weight: normal;
+.advantages__item--wave-middle::before {
+  content: "";
+  background-image: url("../images/wave-middle.svg");
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 250px;
+  position: absolute;
+}
+
+.advantages__item--wave-large::before {
+  content: "";
+  background-image: url("../images/wave-large.svg");
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 295px;
+  position: absolute;
+}
+
+.advantages__items span {
   font-size: 24px;
-  line-height: 18px;
-  color: #242121;
-}
-
-.advantages__wave-text {
-  margin-bottom: 20px;
 }
 
 .advantages__text {
-  width: 600px;
+  max-width: 600px;
 }
 
 .advantages__text p {
@@ -280,11 +315,10 @@ body {
 .conquer__inner {
   max-width: 520px;
   margin-right: auto;
-  /* margin-bottom: 200px; */
 }
 
 .conquer__text {
-  padding-bottom: 150px;
+  padding-bottom: 120px;
   text-align: left;
 }
 
@@ -292,7 +326,7 @@ body {
   margin-bottom: 30px;
 }
 
-.gallery_filter {
+.gallery__filter {
   display: flex;
   margin-bottom: 50px;
 }
@@ -323,7 +357,7 @@ body {
   outline-style: double;
 }
 
-.gallery_content {
+.gallery__content {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
@@ -356,7 +390,7 @@ body {
   margin-bottom: 200px;
 }
 
-.showmore_link {
+.showmore__link {
   font-weight: normal;
   font-size: 24px;
   line-height: 18px;
@@ -368,7 +402,7 @@ body {
   transition: all .2s
 }
 
-.showmore_link:hover {
+.showmore__link:hover {
   background: #C4C4C4;
 }
 
@@ -389,6 +423,7 @@ body {
 }
 
 .blockquote__author {
+  display: block;
   font-style: italic;
   font-weight: 300;
   font-size: 14px;
@@ -478,7 +513,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 600px;
+  max-width: 600px;
 }
 
 .slider__title a {
@@ -597,7 +632,7 @@ ul.pricing__item {
   padding: 200px 224px;
 }
 
-.contacts_title {
+.contacts__title {
   margin-bottom: 243px;
   padding: 0;
 }
@@ -609,7 +644,7 @@ ul.pricing__item {
 }
 
 .form {
-  width: 569px;
+  max-width: 569px;
 }
 
 .form input{

@@ -1,5 +1,5 @@
 $(function () {
-  var mixer = mixitup('.gallery_content');
+  var mixer = mixitup('.gallery__content');
 
   $('.slider__content').slick({
     dots: true,
