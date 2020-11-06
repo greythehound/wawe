@@ -72,18 +72,22 @@ body {
 .header {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  height: 115vh;
+  background-position: center top;
+  height: 100vh;
 }
 
 .header__top-inner {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   padding: 35px 0 0 10px;
 }
 
-.logo {
-  margin-right: 15%;
+.menu {
+  margin: 0 auto;
+}
+
+.menu__btn {
+  display: none;
 }
 
 .menu__list {
@@ -114,8 +118,7 @@ body {
   line-height: 235px;
   color: #0D302C;
   text-transform: uppercase;
-  padding-top: 245px;
-  padding-left: 60px;
+  padding-top: 20%;
 }
 
 .header__subtitle {
@@ -123,7 +126,6 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-  padding: 0 0 100px 15px;
 }
 
 .header__content-inner {
@@ -133,9 +135,6 @@ body {
   align-items: center;
 }
 
-.header__content-link {
-  padding: 215px 0 100px;
-}
 
 .header__content-link::before {
   content: "";
@@ -145,6 +144,7 @@ body {
   position: absolute;
   height: 70px;
   width: 20px;
+  bottom: 10%;
 }
 
 .title {
@@ -779,4 +779,89 @@ ul.pricing__item {
   padding: 69px 69px;
   display: flex;
   justify-content: center;
+}
+
+
+
+/* MEDIA========== */
+/* MEDIA========== */
+
+@media (max-width: 875px) {
+  .header__top-inner {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu {
+    margin: 0;
+  }
+
+  .logo {
+    z-index: 2;
+  }
+
+  .menu__btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+
+  .menu__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #00353C;
+    display: block;
+    text-align: center;
+    transform: translateY(-200%);
+    transition: all .6s;
+  }
+
+  .menu__list--active {
+    transform: translateY(0);
+  }
+
+  ul.menu__list {
+    padding: 90px 0 15px;
+  }
+
+  .menu__item+.menu__item {
+    margin-left: 0;
+  }
+
+  .menu__link {
+    display: block;
+    padding: 15px 0;
+  }
+
+  .header__title {
+    font-size: 165px;
+    line-height: 175px;
+  }
+  .header__subtitle {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 570px) {
+
+  .header__title {
+    font-size: 94px;
+    line-height: 115px;
+  }
+
+  .header__subtitle {
+    font-size: 14px;
+    line-height: 10px;
+  }
+
+  .header__content-link {
+    display: none;
+  }
+
 }
