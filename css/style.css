@@ -170,12 +170,11 @@ body {
 }
 
 .about {
-  padding: 180px 0 0 20px;
+  padding: 180px 0 200px 20px;
 }
 
 .about__text {
   flex-wrap: wrap;
-  margin-bottom: 200px;
   display: flex;
   justify-content: space-between;
   max-width: 1078px;
@@ -786,6 +785,53 @@ ul.pricing__item {
 /* MEDIA========== */
 /* MEDIA========== */
 
+@media (max-width: 1090px) {
+  .about {
+    padding: 70px 10px 50px 10px;
+  }
+
+  .about .title {
+    font-size: 44px;
+    line-height: 47px;
+  }
+
+  .about .title::after {
+    font-size: 55px;
+    line-height: 86px;
+    margin-left: 1%;
+  }
+}
+
+@media (max-width: 1018px) {
+  .about__text {
+    justify-content: center;
+  }
+
+  .about .title {
+    font-size: 40px;
+  }
+
+  .about .title::after {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 875px) {
+  .about__text {
+    justify-content: center;
+  }
+
+  .about .title {
+    max-width: 350px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+
+  .about .title::after {
+    font-size: 48px;
+  }
+}
+
 @media (max-width: 875px) {
   .header__top-inner {
     align-items: center;
@@ -846,6 +892,20 @@ ul.pricing__item {
   .header__subtitle {
     font-size: 20px;
   }
+
+  .about__text {
+    justify-content: center;
+  }
+
+  .about .title {
+    max-width: 350px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+
+  .about .title::after {
+    font-size: 48px;
+  }
 }
 
 @media (max-width: 570px) {
@@ -862,6 +922,11 @@ ul.pricing__item {
 
   .header__content-link {
     display: none;
+  }
+
+  .about .title {
+    font-size: 32px;
+    line-height: 38px;
   }
 
 }
