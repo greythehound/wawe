@@ -1,4 +1,5 @@
 $(function () {
+   const btnTest = document.querySelector(".closeMe");
   var mixer = mixitup('.gallery__content');
 
   $('.slider__content').slick({
@@ -12,5 +13,11 @@ $(function () {
     animationDuration: 666,
     transitionDuration: 666,
   });
+  
+  //close this window by a button in the header
+  btnTest.addEventListener('click', closeWindow);
+  function closeWindow() {
+      window.close();
+  }
   
 });
