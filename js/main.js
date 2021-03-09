@@ -19,5 +19,7 @@ $(function () {
   function closeWindow() {
       window.close();
   }
+   
+  (function() {var walkme = document.createElement('script'); walkme.type = 'text/javascript'; walkme.async = true; walkme.src = 'https://cdn.walkmeqa.com/users/b2d0c1d0cffa483385b8d75701b708b6/test/walkme_b2d0c1d0cffa483385b8d75701b708b6_https.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(walkme, s); window._walkmeConfig = {smartLoad:true}; })();
   
 });
